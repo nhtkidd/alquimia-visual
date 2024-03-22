@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     yp = 0;
 
   document.addEventListener("mousemove", function (e) {
-    mouseX = e.pageX - (-25);
-    mouseY = e.pageY - 20;
+    mouseX = e.pageX - (-55);
+    mouseY = e.pageY - 80;
   });
 
   setInterval(function () {

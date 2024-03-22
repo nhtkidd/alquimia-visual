@@ -30,7 +30,7 @@
 
     <canvas class="noise"></canvas>
     <main data-scroll-container>
-      <section class="main-section" data-scroll-section>
+      <section class="main-section" id="home" data-scroll-section>
         <article class="img-container">
           <img src="assets/img/lunaLeft.png" class="background-img moon" />
           <img
@@ -60,7 +60,11 @@
         </article>
         <h1 class="julius-sans alquimia">Alquimia Visual</h1>
       </section>
-      <section class="description-section section" data-scroll-section>
+      <section
+        class="description-section section"
+        id="about"
+        data-scroll-section
+      >
         <article class="we">
           <h5 class="descripcion-welcome">
             Somos más que una agencia de publicidad; somos un laboratorio
@@ -82,7 +86,7 @@
           </p>
         </article>
       </section>
-      <section class="section service" data-scroll-section>
+      <section class="section service" id="services" data-scroll-section>
         <article class="article-1">
           <div>
             <img
@@ -181,11 +185,246 @@
           </section>
         </article>
       </section>
-      <section class="pricing pin-panel" data-scroll-section>
-        <!-- <p>[ Precios ]</p>
+      <section class="pricing pin-panel pricing-web" id="pricing" data-scroll-section>
+        <p>[ Precios ]</p>
         <h2 class="pricing-introduction">
           Explora nuestro mundo de soluciones digitales innovadoras
-        </h2> -->
+        </h2>
+      </section>
+     
+      <section class="slider" data-scroll-section>
+        <div class="slider-inner">
+          <div class="slide-img">
+            <article class="pricing-card">
+              <div class="first-pricing">
+                <div>
+                  <h4>Paquete Básico de Redes Sociales</h4>
+                  <p>
+                    Empieza con nuestro Paquete Básico de Redes Sociales:
+                    contenido, gestión y análisis para tu marca en redes clave
+                  </p>
+                </div>
+                <h5>$1,500 Mxn <span class="perro">/mensual</span></h5>
+              </div>
+              <div class="second-pricing">
+                <div>
+                  <p class="you-get">Obtienes:</p>
+                  <ul class="list-benefits">
+                    <li class="text">
+                      Gestión de una plataforma de redes sociales ( Facebook,
+                      Instagram, Twitter).
+                    </li>
+                    <li class="text">
+                      Creación y publicación de contenido regular
+                      (publicaciones, historias, etc.).
+                    </li>
+                    <li class="text">
+                      Monitorización y respuesta básica a comentarios y
+                      mensajes.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slide-img">
+            <article class="pricing-card">
+              <div class="first-pricing">
+                <div>
+                  <h4>Diseño de Identidad Corporativa</h4>
+                  <p>Empieza con tu coorporacion con algo a tu medida.</p>
+                </div>
+                <h5>$2,000 Mxn</h5>
+              </div>
+              <div class="second-pricing">
+                <div>
+                  <p class="you-get">Obtienes:</p>
+                  <ul class="list-benefits">
+                    <li class="text">
+                      Creación de logotipo profesional y diseño de la marca.
+                    </li>
+                    <li class="text">
+                      Diseño de tarjetas de presentación, papel membretado y
+                      otros materiales de papelería corporativa.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slide-img">
+            <article class="pricing-card">
+              <div class="first-pricing">
+                <div>
+                  <h4>Paquete Avanzado de Redes Sociales</h4>
+                  <p>
+                    Si requieres de más, con nuestro Paquete Avanzado de Redes
+                    Sociales: servicios mas completos a los ofrecidos en el
+                    basico.
+                  </p>
+                </div>
+                <h5>$1,800 Mxn <span>/mensual</span></h5>
+              </div>
+              <div class="second-pricing">
+                <div>
+                  <p class="you-get">Obtienes:</p>
+                  <ul class="list-benefits">
+                    <li class="text">
+                      Gestión de múltiples plataformas de redes sociales
+                    </li>
+                    <li class="text">
+                      Desarrollo de estrategia de contenido personalizada.
+                    </li>
+                    <li class="text">
+                      Creación de contenido visual (gráficos, imágenes, vídeos).
+                    </li>
+                    <li class="text">
+                      Análisis de métricas y reportes mensuales.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slide-img">
+            <article class="pricing-card">
+              <div class="first-pricing">
+                <div>
+                  <h4>Paquete de Diseño Gráfico</h4>
+                  <p>
+                    Obtén un paquete de diseño gráfico completo: desde logotipos
+                    a material promocional, todo adaptado a tu marca y lista
+                    para destacar
+                  </p>
+                </div>
+                <h5>$2,500 Mxn</h5>
+              </div>
+              <div class="second-pricing">
+                <div>
+                  <p class="you-get">Obtienes:</p>
+                  <ul class="list-benefits">
+                    <li class="text">
+                      Creación de logotipos y branding corporativo
+                    </li>
+                    <li class="text">
+                      Diseño de materiales publicitarios (folletos, carteles,
+                      banners).
+                    </li>
+                    <li class="text">
+                      Edición de imágenes y fotografías para uso en redes
+                      sociales y web.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slide-img">
+            <article class="pricing-card">
+              <div class="first-pricing">
+                <div>
+                  <h4>Desarrollo de Sitio Web</h4>
+                  <p>
+                    Desarrollamos tu sitio web a medida: diseño moderno,
+                    funcionalidad intuitiva y adaptabilidad para destacar en la
+                    web.
+                  </p>
+                </div>
+                <h5>$7,000 Mxn <span>/segun requerimientos</span></h5>
+              </div>
+              <div class="second-pricing">
+                <div>
+                  <p class="you-get">Obtienes:</p>
+                  <ul class="list-benefits">
+                    <li class="text">
+                      Creación de un sitio web moderno y atractivo, optimizado
+                      para dispositivos móviles
+                    </li>
+                    <li class="text">
+                      Integración de herramientas de análisis y seguimiento del
+                      rendimiento.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slide-img">
+            <article class="pricing-card">
+              <div class="first-pricing">
+                <div>
+                  <h4>Paquete de Marketing de Contenido Audiovisual</h4>
+                  <p>
+                    Potencia tu estrategia de marketing con nuestro paquete de
+                    contenido audiovisual: videos impactantes y creativos para
+                    cautivar a tu audiencia.
+                  </p>
+                </div>
+                <h5>$4,500 Mxn <span>/mensual</span></h5>
+              </div>
+              <div class="second-pricing">
+                <div>
+                  <p class="you-get">Obtienes:</p>
+                  <ul class="list-benefits">
+                    <li class="text">Producción de vídeos promocionales</li>
+                    <li class="text">
+                      Creación de contenido audiovisual para redes sociales
+                      (videos cortos, reels, etc.).
+                    </li>
+                    <li class="text">
+                      Edición y postproducción de material audiovisual.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slide-img">
+            <article class="pricing-card">
+              <div class="first-pricing">
+                <div>
+                  <h4>Campaña de Publicidad en Redes Sociales</h4>
+                  <p>
+                    Impulsa tu presencia en línea con nuestra campaña de
+                    publicidad en redes sociales: estrategias efectivas para
+                    aumentar tu alcance y compromiso con la audiencia adecuada.
+                  </p>
+                </div>
+                <h5>
+                  <span
+                    >(se toma el 15% de presupuesto destinado a publicidad
+                    adaptándose a las necesidades y recursos)
+                  </span>
+                </h5>
+              </div>
+              <div class="second-pricing">
+                <div>
+                  <p class="you-get">Obtienes:</p>
+                  <ul class="list-benefits">
+                    <li class="text">
+                      Creación de contenido visual atractivo para redes sociales
+                      (imágenes, videos, gráficos).
+                    </li>
+                    <li class="text">
+                      Gestión de campañas publicitarias en plataformas como
+                      Facebook, Instagram, Twitter, etc
+                    </li>
+                    <li class="text">
+                      Monitoreo y análisis de métricas de rendimiento de las
+                      campañas.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class=" pin-panel pricing-mobile" data-scroll-section>
+        <p>[ Precios ]</p>
+        <h2 class="pricing-introduction">
+          Explora nuestro mundo de soluciones digitales innovadoras
+        </h2>
         <article class="pricing-card">
           <div class="first-pricing">
             <div>
@@ -406,12 +645,93 @@
           </div>
         </article>
       </section>
-      <div class="smooth-scroll" data-scroll-section>
-        <section class="red s">Text</section>
-        <section class="blue s">Text</section>
-        <section class="green s">Text</section>
-        <section class="purple s">Text</section>
-      </div>
+      <footer class="footer" data-scroll-section>
+        <article class="work">
+          <div>
+            <h3>Trabajamos</h3>
+            <h3>juntos?</h3>
+          </div>
+          <div class="mail">
+            <p class="arrow">
+              <a
+                href="mailto:alquimiavisual29@gmail.com"
+                class="estButton js-estButton is-handler"
+                target=""
+                rel=""
+              >
+                <span class="estButton_icon js-estButton_icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="js-estButton_img svg"
+                  >
+                    <path
+                      d="M28 22.6665L12 22.6665C7.58133 22.6665 4 19.0852 4 14.6665L4 2.6665"
+                      stroke="#212125"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="stroke-dashoffset: 41"
+                    ></path>
+                    <path
+                      d="M21.3333 16L28 22.6667L21.3333 29.3333"
+                      stroke="#212125"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="stroke-dashoffset: 20"
+                    ></path></svg
+                ></span>
+              </a>
+            </p>
+            <a
+              class="mail-a hover-underline-animation"
+              href="mailto:alquimiavisual29@gmail.com"
+              >alquimiavisual29@gmail.com</a
+            >
+          </div>
+        </article>
+        <article class="menu">
+          <div class="sections-go">
+            <div>
+              <a
+                href="#home"
+                class="a-go hover-underline-animation"
+                data-scroll-to
+                >Home</a
+              >
+            </div>
+            <div>
+              <a
+                href="#about"
+                class="a-go hover-underline-animation"
+                data-scroll-to
+                >Información</a
+              >
+            </div>
+            <div>
+              <a
+                href="#services"
+                class="a-go hover-underline-animation"
+                data-scroll-to
+                >Servicios</a
+              >
+            </div>
+            <div>
+              <a
+                href="#pricing"
+                class="a-go hover-underline-animation"
+                data-scroll-to
+                >Precios</a
+              >
+            </div>
+            <img src="assets/img/sol.png" class="son-footer" />
+          </div>
+        </article>
+      </footer>
     </main>
   </body>
 
