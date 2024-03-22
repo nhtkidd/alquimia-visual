@@ -1,3 +1,5 @@
+console.clear();
+
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
@@ -18,3 +20,4 @@ const scroll = new LocomotiveScroll({
     smooth: true,
   },
 });
+

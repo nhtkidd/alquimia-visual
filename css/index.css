@@ -6,7 +6,7 @@
 body {
   background-color: #e5e3db;
   max-width: 100%;
-  background-size: 132px 130px;
+  background-size: 150px 120px;
   background-image: linear-gradient(
     to right,
     rgba(128, 128, 128, 0.397) 1px,
@@ -66,6 +66,11 @@ canvas {
   }
 }
 
+main {
+  width: 100%;
+  position: fixed;
+}
+
 .circle {
   position: absolute;
   z-index: 9;
@@ -75,6 +80,11 @@ canvas {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 600px) {
+  .circle {
+    display: none;
+  }
+}
 .julius-sans {
   font-family: "Julius Sans One", sans-serif;
   font-weight: 800;
@@ -85,9 +95,11 @@ canvas {
   font-size: 12vw;
 }
 
+/* ends generals */
+
 .main-section {
   max-width: 100%;
-  height: 100dvh;
+  height: auto;
   display: grid;
   justify-content: center;
 }
@@ -184,9 +196,7 @@ canvas {
     position: absolute;
     bottom: 200px;
   }
-  .alquimia {
-    display: none;
-  }
+
   .alquimia-mobile {
     display: block;
     padding-top: 200px;
@@ -241,7 +251,26 @@ canvas {
   font-weight: 500;
   font-size: 1.6vw;
 }
+@media only screen and (max-width: 600px) {
+  .description-section > .we {
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 10%;
+  }
+  .description-section > .we > .descripcion-welcome {
+    font-size: 5vw;
+    text-align: left;
+  }
 
+  .description-section > .more {
+    width: 50%;
+  }
+
+  .description-section > .more > .descripcion-more {
+    font-weight: 500;
+    font-size: 4vw;
+  }
+}
 /* services */
 
 .service {
@@ -284,7 +313,7 @@ canvas {
 }
 
 .services-cards-container {
-  width: 100%;
+  max-width: 100%;
 
   margin-top: 30px;
   display: flex;
@@ -292,7 +321,7 @@ canvas {
   gap: 20px;
 }
 .service-card {
-  width: 100%;
+  max-width: 100%;
 
   padding-right: 20px;
   height: 50px;
@@ -301,6 +330,7 @@ canvas {
   border-bottom: 1px solid rgba(128, 128, 128, 0.397);
 
   transition: height 0.3s ease; /* Transición suave de la altura */
+  cursor: pointer;
 }
 
 .service-card:hover {
@@ -310,7 +340,7 @@ canvas {
 }
 
 .service-card-premium {
-  width: 100%;
+  max-width: 100%;
 
   padding-right: 20px;
   height: 50px;
@@ -319,6 +349,8 @@ canvas {
   border-bottom: 1px solid rgba(128, 128, 128, 0.397);
 
   transition: height 0.3s ease; /* Transición suave de la altura */
+
+  cursor: pointer;
 }
 
 .service-card-premium:hover {
@@ -355,18 +387,71 @@ canvas {
   font-size: 18px;
 }
 
+@media only screen and (max-width: 600px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 100px;
+  }
+  .article-2 {
+    width: 100%;
+    padding: 0px;
+    height: auto;
+  }
+
+  .article-2 p {
+    font-size: 5vw;
+    padding: 10px;
+  }
+  .article-2 h6 {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 3.9vw;
+  }
+
+  .article-2 > .services-cards-container > .service-card > .info > p {
+    font-size: 4vw;
+  }
+  .article-2 > .services-cards-container > .service-card > .extra-info {
+    font-size: 4vw;
+    padding-left: 15px;
+  }
+
+  .service-card:hover {
+    height: 180px;
+  }
+  .article-2 > .services-cards-container > .service-card-premium > .info > p {
+    font-size: 4vw;
+  }
+  .article-2 > .services-cards-container > .service-card-premium > .extra-info {
+    font-size: 4vw;
+    padding-left: 15px;
+  }
+
+  .service-card-premium:hover {
+    height: 230px;
+    padding-left: 30px;
+  }
+}
+
 /* pricing */
 
 .pricing {
-  width: 100%;
-  height: auto;
-  margin-bottom: 300px;
+  max-width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-
+  margin-bottom: 200px;
   padding: 20px;
+  padding-left: 50px;
+  padding-bottom: 200px;
+
+  font-family: "Anek Tamil", sans-serif;
 }
 
 .pricing > p {
@@ -378,18 +463,18 @@ canvas {
 }
 
 .pricing-card {
-  width: 80%;
-  height: 500px;
+  width: 50%;
   background-color: #f1eada;
   border-radius: 40px;
   border: 1px solid rgba(128, 128, 128, 0.397);
 
-  display: flex;
-
   padding: 40px;
 
-}
+  position: sticky;
+  z-index: 1;
 
+  top: 0;
+}
 
 .pricing-card h4 {
   font-size: 2vw;
@@ -443,7 +528,7 @@ ul li::marker {
 
 .btn-project {
   cursor: pointer;
-  background-color:transparent;
+  background-color: transparent;
   border-radius: 40px;
   padding: 20px;
   border: 1px solid rgba(128, 128, 128, 0.397);
@@ -453,6 +538,67 @@ ul li::marker {
 }
 
 .btn-project:hover {
+  background-color: #52504e;
+  color: white;
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
 }
+
+@media only screen and (max-width: 600px) {
+  .pricing {
+    max-width: 100%;
+
+    margin-bottom: 200px;
+    padding: 50px;
+
+    padding-bottom: 200px;
+
+    font-family: "Anek Tamil", sans-serif;
+  }
+  .pricing > p {
+    font-size: 5vw;
+  }
+
+  .pricing-card {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .pricing-card h4 {
+    font-size: 3vw;
+    font-weight: 700;
+  }
+
+  .first-pricing h5 {
+    margin-top: 20px;
+    font-size: 4vw;
+    margin-bottom: 20px;
+  }
+
+  .first-pricing span {
+    font-size: 2vw;
+    font-weight: 500;
+  }
+
+  .list-benefits {
+    padding: 30px;
+  }
+  .list-benefits .text {
+    font-size: 3.5vw;
+  }
+
+  .second-pricing > div > .you-get {
+    font-size: 3vw;
+  }
+
+  .btn-project {
+    font-size: 3.5vw;
+  }
+}
+
+.smooth-scroll {
+  overflow: hidden !important;
+}
+
+
+

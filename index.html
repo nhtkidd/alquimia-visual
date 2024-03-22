@@ -6,6 +6,7 @@
     <title>Alquimia Visual</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/nubes.css" />
+    <link rel="stylesheet" href="css/locomotive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +30,7 @@
 
     <canvas class="noise"></canvas>
     <main data-scroll-container>
-      <section class="main-section">
+      <section class="main-section" data-scroll-section>
         <article class="img-container">
           <img src="assets/img/lunaLeft.png" class="background-img moon" />
           <img
@@ -59,10 +60,10 @@
         </article>
         <h1 class="julius-sans alquimia">Alquimia Visual</h1>
       </section>
-      <section class="description-section section">
+      <section class="description-section section" data-scroll-section>
         <article class="we">
           <h5 class="descripcion-welcome">
-            Somo más que una agencia de publicidad; somos un laboratorio
+            Somos más que una agencia de publicidad; somos un laboratorio
             creativo donde la magia y la estrategia se unen para transformar
             ideas en campañas publicitarias cautivadoras y efectivas.
           </h5>
@@ -81,13 +82,15 @@
           </p>
         </article>
       </section>
-      <section class="section service">
+      <section class="section service" data-scroll-section>
         <article class="article-1">
           <div>
             <img
+              data-scroll
+              data-scroll-direction="vertical"
+              data-scroll-speed="-5"
               src="assets/img/studio.jpg"
               class="img-service"
-              data-scroll-sticky
             />
           </div>
         </article>
@@ -178,11 +181,11 @@
           </section>
         </article>
       </section>
-      <section class="section pricing">
-        <p>[ Precios ]</p>
+      <section class="pricing pin-panel" data-scroll-section>
+        <!-- <p>[ Precios ]</p>
         <h2 class="pricing-introduction">
           Explora nuestro mundo de soluciones digitales innovadoras
-        </h2>
+        </h2> -->
         <article class="pricing-card">
           <div class="first-pricing">
             <div>
@@ -196,7 +199,7 @@
           </div>
           <div class="second-pricing">
             <div>
-              <p>Obtienes:</p>
+              <p class="you-get">Obtienes:</p>
               <ul class="list-benefits">
                 <li class="text">
                   Gestión de una plataforma de redes sociales ( Facebook,
@@ -225,7 +228,7 @@
           </div>
           <div class="second-pricing">
             <div>
-              <p>Obtienes:</p>
+              <p class="you-get">Obtienes:</p>
               <ul class="list-benefits">
                 <li class="text">
                   Creación de logotipo profesional y diseño de la marca.
@@ -253,7 +256,7 @@
           </div>
           <div class="second-pricing">
             <div>
-              <p>Obtienes:</p>
+              <p class="you-get">Obtienes:</p>
               <ul class="list-benefits">
                 <li class="text">
                   Gestión de múltiples plataformas de redes sociales
@@ -285,7 +288,7 @@
           </div>
           <div class="second-pricing">
             <div>
-              <p>Obtienes:</p>
+              <p class="you-get">Obtienes:</p>
               <ul class="list-benefits">
                 <li class="text">
                   Creación de logotipos y branding corporativo
@@ -317,7 +320,7 @@
           </div>
           <div class="second-pricing">
             <div>
-              <p>Obtienes:</p>
+              <p class="you-get">Obtienes:</p>
               <ul class="list-benefits">
                 <li class="text">
                   Creación de un sitio web moderno y atractivo, optimizado para
@@ -347,7 +350,7 @@
           </div>
           <div class="second-pricing">
             <div>
-              <p>Obtienes:</p>
+              <p class="you-get">Obtienes:</p>
               <ul class="list-benefits">
                 <li class="text">Producción de vídeos promocionales</li>
                 <li class="text">
@@ -382,7 +385,7 @@
           </div>
           <div class="second-pricing">
             <div>
-              <p>Obtienes:</p>
+              <p class="you-get">Obtienes:</p>
               <ul class="list-benefits">
                 <li class="text">
                   Creación de contenido visual atractivo para redes sociales
@@ -403,6 +406,12 @@
           </div>
         </article>
       </section>
+      <div class="smooth-scroll" data-scroll-section>
+        <section class="red s">Text</section>
+        <section class="blue s">Text</section>
+        <section class="green s">Text</section>
+        <section class="purple s">Text</section>
+      </div>
     </main>
   </body>
 
