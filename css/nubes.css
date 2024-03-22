@@ -1,0 +1,137 @@
+.nube {
+  position: absolute;
+  width: 200px;
+  z-index: -2;
+  opacity: 0.3;
+}
+
+
+
+.nube-1 {
+  left: 20px;
+  top: 298px;
+  animation: nube-1 4s infinite alternate; /* Animación infinita */
+}
+.nube-2 {
+  left: 235px;
+  top: 670px;
+  animation: nube-2 5s infinite alternate; /* Animación infinita */
+}
+.nube-3 {
+  left: 635px;
+  top: 508px;
+  animation: nube-3 6s infinite alternate; /* Animación infinita */
+}
+.nube-4 {
+  left: 487px;
+  top: 50px;
+  animation: nube-4 4s infinite alternate; /* Animación infinita */
+}
+.nube-5 {
+  left: 1600px;
+  top: 140px;
+  animation: nube-5 5s infinite alternate; /* Animación infinita */
+}
+
+.nube-6 {
+  left: 1072px;
+  top: 180px;
+  animation: nube-6 6s infinite alternate; /* Animación infinita */
+}
+
+.nube-7 {
+  left: 1800px;
+  top: 700px;
+  animation: nube-7 4s infinite alternate; /* Animación infinita */
+}
+
+.nube-8 {
+  left: 1350px;
+  top: 600px;
+  animation: nube-8 5s infinite alternate; /* Animación infinita */
+}
+
+.nube-9 {
+  left: 980px;
+  top: 420px;
+  animation: nube-9 4s infinite alternate; /* Animación infinita */
+}
+
+@keyframes nube-1 {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes nube-2 {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes nube-3 {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes nube-4 {
+  0% {
+    transform: translateX(-90px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes nube-5 {
+  0% {
+    transform: translateX(-35px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes nube-6 {
+  0% {
+    transform: translateX(-76px);
+  }
+  100% {
+    transform: translateX(34px);
+  }
+}
+@keyframes nube-7 {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes nube-8 {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes nube-9 {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}

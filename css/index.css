@@ -1,0 +1,457 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #e5e3db;
+  max-width: 100%;
+  background-size: 132px 130px;
+  background-image: linear-gradient(
+    to right,
+    rgba(128, 128, 128, 0.397) 1px,
+    transparent 1px
+  );
+}
+
+canvas {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent
+    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+.circle {
+  position: absolute;
+  z-index: 9;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #52504e;
+  border-radius: 50%;
+}
+
+.julius-sans {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: black;
+
+  text-align: center;
+  font-size: 12vw;
+}
+
+.main-section {
+  max-width: 100%;
+  height: 100dvh;
+  display: grid;
+  justify-content: center;
+}
+
+.main-section > .img-container {
+  width: 100%;
+  height: 90%;
+
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  position: relative;
+}
+
+.sun-center {
+  margin-top: 80px;
+  margin-bottom: -80px;
+  animation: solFloating 3s infinite alternate; /* Animación infinita */
+}
+
+.main-section > article > .background-img {
+  width: 600px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+.son-mobile {
+  display: none;
+}
+
+.alquimia-mobile {
+  display: none;
+}
+
+.moon {
+  animation: moonFloating 4s infinite alternate; /* Animación infinita */
+}
+
+@keyframes solFloating {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes moonFloating {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .main-section {
+    height: auto;
+  }
+  .main-section > .img-container {
+    gap: 10px;
+    position: relative;
+  }
+}
+/* QUERYS PARA CELULAR */
+@media only screen and (max-width: 600px) {
+  .julius-sans {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: black;
+
+    text-align: center;
+    font-size: 10vw;
+  }
+  .main-section {
+    height: 100dvh;
+  }
+  .main-section > article > .background-img {
+    display: none;
+  }
+
+  .main-section > .img-container {
+    width: 100%;
+    height: 90dvh;
+    position: relative;
+  }
+  .son-mobile {
+    display: block;
+    width: 100%;
+    height: 50%;
+
+    position: absolute;
+    bottom: 200px;
+  }
+  .alquimia {
+    display: none;
+  }
+  .alquimia-mobile {
+    display: block;
+    padding-top: 200px;
+  }
+}
+/* QUERYS PARA TABLET */
+@media (min-width: 601px) and (max-width: 769px) {
+  .main-section {
+    height: 100dhv;
+  }
+
+  .julius-sans {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: black;
+
+    text-align: center;
+    font-size: 9vw;
+  }
+
+  .moon {
+    display: none;
+  }
+}
+
+.section {
+  width: 100%;
+
+  font-family: "Anek Tamil", sans-serif;
+}
+
+/* DESCRIPCION */
+
+.description-section > .we {
+  width: 50%;
+  padding-left: 8%;
+  padding-top: 10%;
+}
+.description-section > .we > .descripcion-welcome {
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.description-section > .more {
+  width: 25%;
+  margin-top: 100px;
+  margin-left: 15.5%;
+}
+
+.description-section > .more > .descripcion-more {
+  font-weight: 500;
+  font-size: 1.6vw;
+}
+
+/* services */
+
+.service {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  height: 900px;
+}
+
+.service > article {
+  flex: 1;
+}
+
+.article-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.article-1 > div {
+  width: 90%;
+  height: 80%; /* O la altura deseada */
+  overflow: hidden;
+}
+
+.img-service {
+  width: 100%;
+  height: 100%; /* Establece la altura al 100% del contenedor padre */
+  object-fit: cover;
+  position: sticky;
+}
+.article-2 {
+  padding-right: 55px;
+}
+
+.article-2 p {
+  font-size: 1vw;
+}
+.article-2 h6 {
+  font-size: 1.5vw;
+}
+
+.services-cards-container {
+  width: 100%;
+
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.service-card {
+  width: 100%;
+
+  padding-right: 20px;
+  height: 50px;
+  overflow: hidden;
+  border-top: 1px solid rgba(128, 128, 128, 0.397);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+
+  transition: height 0.3s ease; /* Transición suave de la altura */
+}
+
+.service-card:hover {
+  height: 120px;
+
+  transition: height 0.3s ease; /* Transición suave de la altura */
+}
+
+.service-card-premium {
+  width: 100%;
+
+  padding-right: 20px;
+  height: 50px;
+  overflow: hidden;
+  border-top: 1px solid rgba(128, 128, 128, 0.397);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+
+  transition: height 0.3s ease; /* Transición suave de la altura */
+}
+
+.service-card-premium:hover {
+  height: 180px;
+
+  transition: height 0.3s ease; /* Transición suave de la altura */
+}
+
+.service-card-premium .info {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+.service-card .info {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.title-info {
+  font-weight: 500;
+}
+.extra-info {
+  padding: 5px;
+}
+
+.text-extra {
+  font-size: 18px;
+}
+
+/* pricing */
+
+.pricing {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px;
+}
+
+.pricing > p {
+  font-size: 1vw;
+}
+.pricing-introduction {
+  font-size: 5vw;
+  text-align: center;
+}
+
+.pricing-card {
+  width: 80%;
+  height: 500px;
+  background-color: #f1eada;
+  border-radius: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+
+  display: flex;
+
+  padding: 40px;
+
+}
+
+
+.pricing-card h4 {
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+.first-pricing {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-right: 20px;
+}
+.first-pricing h5 {
+  font-size: 3vw;
+}
+
+.first-pricing span {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.second-pricing {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.second-pricing p {
+  font-size: 1.5vw;
+}
+
+.second-pricing span {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.list-benefits {
+  padding: 30px;
+}
+.list-benefits .text {
+  font-size: 1.2vw;
+}
+ul li::marker {
+  content: "✔️";
+}
+
+.btn-project {
+  cursor: pointer;
+  background-color:transparent;
+  border-radius: 40px;
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  transition: all 0.2s ease-in-out;
+
+  font-size: 1.2vw;
+}
+
+.btn-project:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}

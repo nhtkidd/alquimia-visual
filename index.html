@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alquimia Visual</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/nubes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="js/cursor.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+  </head>
+  <body>
+    <div id="ball" class="circle"></div>
+
+    <canvas class="noise"></canvas>
+    <main data-scroll-container>
+      <section class="main-section">
+        <article class="img-container">
+          <img src="assets/img/lunaLeft.png" class="background-img moon" />
+          <img
+            src="assets/img/sol.png"
+            class="background-img son"
+            data-scroll
+            data-scroll-direction="vertical"
+            data-scroll-speed="-5"
+          />
+          <img
+            src="assets/img/lunaLeft.png"
+            class="son-mobile"
+            data-scroll
+            data-scroll-direction="vertical"
+            data-scroll-speed="-5"
+          />
+          <img src="assets/img/lunaRight.png" class="background-img moon" />
+          <img src="assets/img/nube.png" class="nube nube-1" id="1" />
+          <img src="assets/img/nube.png" class="nube nube-2" id="2" />
+          <img src="assets/img/nube.png" class="nube nube-3" id="3" />
+          <img src="assets/img/nube.png" class="nube nube-4" id="4" />
+          <img src="assets/img/nube.png" class="nube nube-5" id="5" />
+          <img src="assets/img/nube.png" class="nube nube-6" id="6" />
+          <img src="assets/img/nube.png" class="nube nube-7" id="7" />
+          <img src="assets/img/nube.png" class="nube nube-8" id="8" />
+          <img src="assets/img/nube.png" class="nube nube-9" id="9" />
+        </article>
+        <h1 class="julius-sans alquimia">Alquimia Visual</h1>
+      </section>
+      <section class="description-section section">
+        <article class="we">
+          <h5 class="descripcion-welcome">
+            Somo más que una agencia de publicidad; somos un laboratorio
+            creativo donde la magia y la estrategia se unen para transformar
+            ideas en campañas publicitarias cautivadoras y efectivas.
+          </h5>
+        </article>
+        <article class="more">
+          <p class="descripcion-more" data-scroll data-scroll-speed="2">
+            Nuestro equipo de alquimistas visuales está dedicado a fusionar la
+            innovación con la estética, creando mensajes que no solo capturan la
+            atención, sino que también inspiran acciones.
+          </p>
+          <br />
+          <p class="descripcion-more" data-scroll data-scroll-speed="2">
+            Desde la conceptualización hasta la implementación, cada proyecto es
+            cuidadosamente elaborado para reflejar la esencia única de cada
+            marca y alcanzar resultados sobresalientes.
+          </p>
+        </article>
+      </section>
+      <section class="section service">
+        <article class="article-1">
+          <div>
+            <img
+              src="assets/img/studio.jpg"
+              class="img-service"
+              data-scroll-sticky
+            />
+          </div>
+        </article>
+        <article class="article-2">
+          <p>[ Nuestros Servicios]</p>
+          <h6>
+            Con un enfoque en la innovación y la calidad visual, ayudamos a
+            nuestros clientes a destacarse en un mercado saturado,
+            proporcionándoles herramientas y estrategias efectivas para conectar
+            con su audiencia de manera significativa y duradera.
+          </h6>
+          <section class="services-cards-container">
+            <article class="service-card">
+              <div class="info">
+                <p class="title-info">Diseño gráfico y creativo</p>
+                <p>Ver</p>
+              </div>
+              <p class="extra-info">
+                Desarrollo de elementos visuales clave como logotipos, material
+                promocional y banners publicitarios para destacar la marca de
+                los clientes.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="info">
+                <p class="title-info">Desarrollo de campañas publicitarias</p>
+                <p>Ver</p>
+              </div>
+              <p class="extra-info">
+                Creación de estrategias publicitarias personalizadas, desde la
+                conceptualización hasta la ejecución en diversos medios como
+                redes sociales y publicidad en línea.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="info">
+                <p class="title-info">Marketing digital</p>
+                <p>Ver</p>
+              </div>
+              <p class="extra-info">
+                Gestión de redes sociales, publicidad en línea (SEM y PPC) y
+                análisis de datos para maximizar el alcance y la efectividad de
+                las campañas digitales.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="info">
+                <p class="title-info">Consultoría y asesoramiento</p>
+                <p>Ver</p>
+              </div>
+              <p class="extra-info">
+                Brindar orientación estratégica a los clientes en materia de
+                marketing y publicidad, ayudándoles a desarrollar estrategias
+                efectivas y optimizar sus presupuestos
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="info">
+                <p class="title-info">Producción audiovisual</p>
+                <p>Ver</p>
+              </div>
+              <p class="extra-info">
+                Creación de contenido audiovisual como videos promocionales y
+                contenido para redes sociales
+              </p>
+            </article>
+            <article class="service-card-premium">
+              <div class="info">
+                <p class="title-info">Paquete premium</p>
+                <p>Ver</p>
+              </div>
+
+              <ul class="extra-info">
+                <li class="text-extra">
+                  Paquete Diseño de Identidad corporativa
+                </li>
+                <li class="text-extra">Paquete Desarrollo de sitios web</li>
+                <li class="text-extra">
+                  Paquete Campaña de publicidad en redes sociales
+                </li>
+                <li class="text-extra">
+                  Servicio: Producción de comerciales y videos promocionales de
+                  alta calidad
+                </li>
+              </ul>
+            </article>
+          </section>
+        </article>
+      </section>
+      <section class="section pricing">
+        <p>[ Precios ]</p>
+        <h2 class="pricing-introduction">
+          Explora nuestro mundo de soluciones digitales innovadoras
+        </h2>
+        <article class="pricing-card">
+          <div class="first-pricing">
+            <div>
+              <h4>Paquete Básico de Redes Sociales</h4>
+              <p>
+                Empieza con nuestro Paquete Básico de Redes Sociales: contenido,
+                gestión y análisis para tu marca en redes clave
+              </p>
+            </div>
+            <h5>$1,500 Mxn <span>/mensual</span></h5>
+          </div>
+          <div class="second-pricing">
+            <div>
+              <p>Obtienes:</p>
+              <ul class="list-benefits">
+                <li class="text">
+                  Gestión de una plataforma de redes sociales ( Facebook,
+                  Instagram, Twitter).
+                </li>
+                <li class="text">
+                  Creación y publicación de contenido regular (publicaciones,
+                  historias, etc.).
+                </li>
+                <li class="text">
+                  Monitorización y respuesta básica a comentarios y mensajes.
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-project">Iniciar proyecto</button>
+          </div>
+        </article>
+        <article class="pricing-card">
+          <div class="first-pricing">
+            <div>
+              <h4>Diseño de Identidad Corporativa</h4>
+              <p>Empieza con tu coorporacion con algo a tu medida.</p>
+            </div>
+            <h5>$2,000 Mxn</h5>
+          </div>
+          <div class="second-pricing">
+            <div>
+              <p>Obtienes:</p>
+              <ul class="list-benefits">
+                <li class="text">
+                  Creación de logotipo profesional y diseño de la marca.
+                </li>
+                <li class="text">
+                  Diseño de tarjetas de presentación, papel membretado y otros
+                  materiales de papelería corporativa.
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-project">Iniciar proyecto</button>
+          </div>
+        </article>
+        <article class="pricing-card">
+          <div class="first-pricing">
+            <div>
+              <h4>Paquete Avanzado de Redes Sociales</h4>
+              <p>
+                Si requieres de más, con nuestro Paquete Avanzado de Redes
+                Sociales: servicios mas completos a los ofrecidos en el basico.
+              </p>
+            </div>
+            <h5>$1,800 Mxn <span>/mensual</span></h5>
+          </div>
+          <div class="second-pricing">
+            <div>
+              <p>Obtienes:</p>
+              <ul class="list-benefits">
+                <li class="text">
+                  Gestión de múltiples plataformas de redes sociales
+                </li>
+                <li class="text">
+                  Desarrollo de estrategia de contenido personalizada.
+                </li>
+                <li class="text">
+                  Creación de contenido visual (gráficos, imágenes, vídeos).
+                </li>
+                <li class="text">Análisis de métricas y reportes mensuales.</li>
+              </ul>
+            </div>
+
+            <button class="btn-project">Iniciar proyecto</button>
+          </div>
+        </article>
+        <article class="pricing-card">
+          <div class="first-pricing">
+            <div>
+              <h4>Paquete de Diseño Gráfico</h4>
+              <p>
+                Obtén un paquete de diseño gráfico completo: desde logotipos a
+                material promocional, todo adaptado a tu marca y lista para
+                destacar
+              </p>
+            </div>
+            <h5>$2,500 Mxn</h5>
+          </div>
+          <div class="second-pricing">
+            <div>
+              <p>Obtienes:</p>
+              <ul class="list-benefits">
+                <li class="text">
+                  Creación de logotipos y branding corporativo
+                </li>
+                <li class="text">
+                  Diseño de materiales publicitarios (folletos, carteles,
+                  banners).
+                </li>
+                <li class="text">
+                  Edición de imágenes y fotografías para uso en redes sociales y
+                  web.
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-project">Iniciar proyecto</button>
+          </div>
+        </article>
+        <article class="pricing-card">
+          <div class="first-pricing">
+            <div>
+              <h4>Desarrollo de Sitio Web</h4>
+              <p>
+                Desarrollamos tu sitio web a medida: diseño moderno,
+                funcionalidad intuitiva y adaptabilidad para destacar en la web.
+              </p>
+            </div>
+            <h5>$7,000 Mxn <span>/segun requerimientos</span></h5>
+          </div>
+          <div class="second-pricing">
+            <div>
+              <p>Obtienes:</p>
+              <ul class="list-benefits">
+                <li class="text">
+                  Creación de un sitio web moderno y atractivo, optimizado para
+                  dispositivos móviles
+                </li>
+                <li class="text">
+                  Integración de herramientas de análisis y seguimiento del
+                  rendimiento.
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-project">Iniciar proyecto</button>
+          </div>
+        </article>
+        <article class="pricing-card">
+          <div class="first-pricing">
+            <div>
+              <h4>Paquete de Marketing de Contenido Audiovisual</h4>
+              <p>
+                Potencia tu estrategia de marketing con nuestro paquete de
+                contenido audiovisual: videos impactantes y creativos para
+                cautivar a tu audiencia.
+              </p>
+            </div>
+            <h5>$4,500 Mxn <span>/mensual</span></h5>
+          </div>
+          <div class="second-pricing">
+            <div>
+              <p>Obtienes:</p>
+              <ul class="list-benefits">
+                <li class="text">Producción de vídeos promocionales</li>
+                <li class="text">
+                  Creación de contenido audiovisual para redes sociales (videos
+                  cortos, reels, etc.).
+                </li>
+                <li class="text">
+                  Edición y postproducción de material audiovisual.
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-project">Iniciar proyecto</button>
+          </div>
+        </article>
+        <article class="pricing-card">
+          <div class="first-pricing">
+            <div>
+              <h4>Campaña de Publicidad en Redes Sociales</h4>
+              <p>
+                Impulsa tu presencia en línea con nuestra campaña de publicidad
+                en redes sociales: estrategias efectivas para aumentar tu
+                alcance y compromiso con la audiencia adecuada.
+              </p>
+            </div>
+            <h5>
+              <span
+                >(se toma el 15% de presupuesto destinado a publicidad
+                adaptándose a las necesidades y recursos)
+              </span>
+            </h5>
+          </div>
+          <div class="second-pricing">
+            <div>
+              <p>Obtienes:</p>
+              <ul class="list-benefits">
+                <li class="text">
+                  Creación de contenido visual atractivo para redes sociales
+                  (imágenes, videos, gráficos).
+                </li>
+                <li class="text">
+                  Gestión de campañas publicitarias en plataformas como
+                  Facebook, Instagram, Twitter, etc
+                </li>
+                <li class="text">
+                  Monitoreo y análisis de métricas de rendimiento de las
+                  campañas.
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-project">Iniciar proyecto</button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+
+  <script src="js/animations.js"></script>
+
+  <script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+  <link
+    href="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+"
+    rel="stylesheet"
+  />
+</html>
