@@ -627,8 +627,8 @@ ul li::marker {
 footer {
   max-width: 100%;
 
-  height: 100dvh;
-  margin-bottom: 200px;
+  height: 500px;
+
   display: flex;
   flex-direction: row;
   font-family: "Anek Tamil", sans-serif;
@@ -692,7 +692,7 @@ footer {
   height: 100%;
   display: flex;
   padding-left: 5%;
-  padding-top: 2%;
+  padding-top: 8%;
   padding-bottom: 5%;
 
   position: relative;
@@ -722,8 +722,10 @@ footer {
 @media only screen and (max-width: 600px) {
   footer {
     max-width: 100%;
+    height: 100dvh;
     flex-direction: column;
-    height: 800px;
+
+    margin-bottom: 200px;
   }
 
   .work h3 {
