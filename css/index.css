@@ -454,7 +454,6 @@ main {
 
   position: relative;
   font-family: "Anek Tamil", sans-serif;
-  
 }
 
 .pricing > p {
@@ -574,10 +573,7 @@ ul li::marker {
   .pricing-mobile {
     max-width: 100%;
 
-    margin-bottom: 200px;
     padding: 50px;
-
-    padding-bottom: 200px;
 
     font-family: "Anek Tamil", sans-serif;
     display: flex;
@@ -610,7 +606,7 @@ ul li::marker {
   .list-benefits {
     padding: 30px;
   }
-  .list-benefits .text {
+  .pricing-mobile .list-benefits .text {
     font-size: 3.5vw;
   }
 
